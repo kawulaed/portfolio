@@ -4,30 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>EvanKawula</title>
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
     <h1>Evan Kawula Blockchain Developer</h1>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>About Me</li>
-            <li>Contact</li>
-            <li>My Projects</li>
-        </ul>
-    </nav>
+    <div id=navbar>
+        <a href=#home>HOME</a>
+        <a href="#about">ABOUT</a>
+        <a href="#portfolio">PORTFOLIO</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT</a>
+    </div>
     <div class="Me-Picture">
         <img src="./img/E-trip.jpg" alt="A picture of Evan">
     </div>
     <br>
     <br>
     <hr>
-    <div class="About-me">
+    <div id="about" class="About-me">
         <h2>About Me</h2>
         <br>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates quod aliquid unde voluptatum quisquam. Quidem, exercitationem repellat eos qui similique, sit, ab obcaecati quae cumque quibusdam sed praesentium distinctio voluptas.</p>
     </div>
+    <br><br><hr>
+    <div id="portfolio" class="portfolio">
+        <h2>PORTFOLIO</h2>
+        <br>
+        <p>soon to be projects here</p>
+    </div>
+    <br><br><hr>
+    <div id="blog">
+        <h2>BLOG</h2>
+        <br>
+        <p>I guess I need to start a blog</p>
+    </div>
+    <script>window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+        
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
     
 </body>
 </html>
