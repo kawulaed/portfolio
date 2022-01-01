@@ -9,6 +9,24 @@
      -o-background-size:cover;
      background-size: cover;
  }
+ .container {
+     display: inline-block;
+     padding: 60px;
+ }
+ .typed-out {
+     overflow: hidden;
+     border-right: .15em solid #ffcb9a;
+     font-size: xx-large;
+     width: 0;
+     animation: typing 2s steps(20, end) forwards;
+     display: inline-block;
+     font-family: monospace;
+ }
+ 
+ @keyframes typing {
+     from {width: 0}
+     to {width: 100%}
+ }
  #top h1 {
      padding: 40px;
      color:black;
